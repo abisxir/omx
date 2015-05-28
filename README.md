@@ -55,12 +55,12 @@ To create your tables just add this line after schema creation:
     schema.createTable(CustomerEntity.class);
     
 Consider that the framework is not aware of changes to alter tables. It just creates a table when it is not already
-created. Then if you want to force to create the table as you have some changes, drop table first:
+created. Then if you want to force to create the table as you have some changes, drop the table first:
 
     schema.dropTable(CustomerEntity.class);
 
-As you know, reflection is slow in non-scripting languages like java or C#. To help the framework (it is optional) you
-can build a factory that helps to instantiate entities.
+As you know, reflection is slow in non-scripting languages like Java or C#. To help the framework (it is optional) you
+can build a factory (during table creation) that helps to instantiate entities.
 
     schema.createTable(CustomerEntity.class, new Entity.Factory() {
         @Override
@@ -82,7 +82,7 @@ Otherwise you need to specify the schema:
 
     Store<CustomerEntity> store = Database.getInstance().getStore("demo", CustomerEntity.class);
     
-The following lines create a new customer. It would throw an exception if the customer was already exist.
+The following lines create a new customer. It would throw an exception, if the customer was already created.
 
     CustomerEntity entity = new CustomerEntity();
 
