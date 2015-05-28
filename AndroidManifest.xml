@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.abi.omx">
+
+    <uses-sdk
+            android:minSdkVersion="11" />
+    <application android:allowBackup="true" android:label="@string/_app_name">
+    </application>
+
+</manifest>
