@@ -2,7 +2,7 @@
 Lightweight Object Mapper for Android
 
 The aim of project is to create a lightweight Object Mapper to ease working with SQLite database. One import issue is
-that this library does not handles relation between objects so it is not an ORM. It simply helps developers to create
+that this library does not handle relation between objects so it is not an ORM. It simply helps developers to create
 multiple SQLite database files (Schema). Then the developer can create several tables inside each schema. The project is
 in progress and it is the first unstable :) release.
 
