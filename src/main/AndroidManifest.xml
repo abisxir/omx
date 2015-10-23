@@ -3,7 +3,7 @@
 
     <uses-sdk
             android:minSdkVersion="11" />
-    <application android:allowBackup="true" android:label="@string/_app_name">
+    <application android:allowBackup="true" android:label="OMX">
     </application>
 
 </manifest>
