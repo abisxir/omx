@@ -1,10 +1,10 @@
 # omx
 Lightweight Object Mapper for Android
 
-The aim of project is to create a lightweight Object Mapper to ease working with SQLite database. One import issue is
-that this library does not handle relation between objects so it is not an ORM. It simply helps developers to create
-multiple SQLite database files (Schema). Then the developer can create several tables inside each schema. The project is
-in progress and it is the first unstable :) release.
+The aim of project is to create a lightweight Object Mapper to ease working with SQLite databases. You can call this
+library an ORM but the issue is that this library does not handle relation between objects. It simply helps developers
+to map the database flat tables to classes. Developers can have multiple tables inside multiple schemas (multiple sqlite
+databases) The project is in progress and it is the first unstable :) release.
 
 # Usage
 
@@ -19,10 +19,10 @@ in progress and it is the first unstable :) release.
 * Removing 
 * Queries
 
-To install the library download the source or use git to clone. You will need ant to build the jar file. Type the following
-command and it will generate the jar file. Add the jar file to your dependencies and use the library as you want.
+To install the library download the source or use git to clone. You will need gradle to build the jar file. Type the following
+command and it will generate the aar file. Add the file to your dependencies and use the library as you want.
 
-    > ant jar
+    > gradle build
 
 To initialize the database just pass application context to initialize method.
 
